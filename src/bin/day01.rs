@@ -7,7 +7,7 @@ fn fuel_calc(x: i64) -> i64 {
 fn recursive_fuel_calc(x: i64) -> i64 {
     let fuel = fuel_calc(x);
     if fuel > 0 {
-        fuel + recursive_fuel_calc(x)
+        fuel + recursive_fuel_calc(fuel)
     } else {
         0
     }
